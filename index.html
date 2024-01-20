@@ -1,0 +1,222 @@
+<html>
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Restaurant </title>
+        <link rel="shortcut icon" href="images/food-serving (1).png " type="image/x-icon">
+        <link rel="stylesheet" href="css/bootstrap.min.css">
+        <link rel="stylesheet" href="css/all.min.css">
+        <link rel="stylesheet" href="css/index_style.css">                                                                                                                                                                                
+    </head>
+    <body>
+
+        <div class="loadingScreen">
+          <div class="loader"></div>
+        </div>
+
+        <section id="home" class="position-relative">
+            <nav class="navbar navbar-expand-lg navbar-dark  navcolor fixed-top bg-body-tertiary" >
+                <div class="container">
+                  <a class="navbar-brand" href="#"><img src="images/restaurant-2-light.png" class="logo-img"></a>
+                  <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                  </button>
+                  <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav m-auto mb-2 mb-lg-0">
+                      <li class="nav-item">
+                        <a class="nav-link getFood fs-5 active hoverIconFooter" aria-current="page" href="#demo" >Pizza</a>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link getFood fs-5 hoverIconFooter" href="#demo">Hamburger</a>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link getFood fs-5 hoverIconFooter" href="#demo">Pasta</a>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link getFood fs-5 hoverIconFooter" href="#demo">Seafood</a>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link getFood fs-5 hoverIconFooter" href="#demo">Ice Cream</a>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link getFood fs-5 hoverIconFooter" href="#demo">Blueberry</a>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link getFood fs-5 hoverIconFooter" href="#demo">Popcorn</a>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+              </nav>
+             
+                  <div id="carouselExampleSlidesOnly" class="carousel slide position-relative  d-flex align-items-center justify-content-center" data-bs-ride="carousel">
+                    <div class="carousel-inner  ">
+                      <div class="carousel-item active" >
+                        <img src="images/bg4.jpg" class="d-block samehight-slider w-100 " alt="Food">
+                      </div>
+                      <div class="carousel-item" >
+                        <img src="images/bg3.jpg" class="d-block samehight-slider  w-100" alt="Food">
+                      </div>
+                      <div class="carousel-item" >
+                        <img src="images/bg2.jpg" class="d-block samehight-slider w-100" alt="Food">
+                      </div>
+                      <div class="carousel-item">
+                        <img src="images/bg1.jpg" class="d-block samehight-slider w-100" alt="Food">
+                      </div>
+                    </div>
+                    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleSlidesOnly" data-bs-slide="prev">
+                      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                      <span class="visually-hidden">Previous</span>
+                    </button>
+                    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleSlidesOnly" data-bs-slide="next">
+                      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                      <span class="visually-hidden">Next</span>
+                    </button>
+                  </div>
+
+                  <h1 class="position-absolute restaurant-h1 fw-bolder text-light" >Restaurant</h1>
+                  <a href="#demo" class="down-icon position-absolute "><i class="fas fa-arrow-alt-circle-down fa-2xs "  aria-hidden="true"></i> </a>
+        </section>
+
+        <div id="demo" class="container position-relative">
+            <div id="recipesRow" class="row">
+
+            </div>
+        </div>
+ 
+        <!-- Modal -->
+        <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+          <div class="modal-dialog">
+            <div class="modal-content">
+              <div class="modal-header">
+                <h1 class="modal-title fs-5" id="exampleModalLabel">Recipe Details</h1>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+              </div>
+              <div class="modal-body" >
+
+                <div id="recipeData">
+
+                </div>
+                <div>
+                  <ul id="ingredientList">
+                    
+                  </ul>
+                </div>
+
+              </div>
+            </div>
+          </div>
+        </div>
+  
+        <button id="topBtn" class="btn btn-dark">
+          <i class="fa fa-arrow-alt-circle-up"></i>
+        </button>
+
+        <footer class="mt-5" id="footer">
+          <div class=" border-0 card-footer ">
+            <div class="container mt-5 ">
+              <div class="row g-4">
+                <div class="col-md-3 me-5 ">
+                    <h5 class="fs-1 fw-bolder "> <img src="images/restaurant.png" alt="logo restaurant"  class=" imgLogoFooter me-2">Restaurant</h5>
+                    <p class="text-muted">If you feel hungry, do not hesitate to call me from the hot line, I am always waiting for you,I hope you are in good health.</p>
+                        <div class="  footerIcon">
+                          <a href="#"><i class="fab fa-facebook text-dark fs-4"></i></a>
+                          <a href="#" class="mx-3"><i class="fab fa-twitter text-dark fs-4"></i></i></a>
+                          <a href="#"><i class="fab fa-instagram text-dark fs-4"></i></a>
+                      </div>
+                </div>
+
+
+                
+                <div class="col-md-4 ms-3">
+                    <h2 class="h2-list fw-bolder" >Try another food</h2>
+                    <div class="listFooter d-flex ">
+                      <ul >
+                        <li >
+                          <a class="getFood fs-5 text-dark fw-bolder hoverIconFooter" href="#demo">Hamburger</a>
+                        </li>
+                        <li >
+                          <a class="getFood fs-5 text-dark fw-bolder hoverIconFooter" href="#demo">Pasta</a>
+                        </li>
+                        <li >
+                          <a class="getFood fs-5 text-dark fw-bolder hoverIconFooter" href="#demo">Seafood</a>
+                        </li>
+                      </ul>
+
+                      <ul>
+                        <li >
+                          <a class="getFood fs-5 text-dark fw-bolder hoverIconFooter" href="#demo">Ice Cream</a>
+                        </li>
+                        <li >
+                          <a class="getFood fs-5 text-dark fw-bolder hoverIconFooter" href="#demo">Blueberry</a>
+                        </li>
+                        <li >
+                          <a class="getFood fs-5 text-dark fw-bolder hoverIconFooter" href="#demo">Popcorn</a>
+                        </li>
+                      </ul>
+                    </div>
+                </div>
+
+
+                <div class="col-md-4">
+                    <div class=" mb-5 ">
+                      <h2 class=" ">Get in Touch</h2>
+                      <div class="footer-contact-block mb-4 footerIcon">
+                          <div class="icon d-flex align-items-center">
+                            <i class="fas fa-envelope text-dark fs-4 me-3"></i>
+                            <span class="h4 mb-0 text-muted">Support Available for 24/7</span>
+                          </div>
+                          <h4 class="mt-2"><a href="tel:+23-345-67890" class="text-decoration-none text-dark hoverIconFooter fw-bold">Support@email.com</a></h4>
+                      </div>
+
+                      <div class="footer-contact-block footerIcon">
+                          <div class=" d-flex align-items-center">
+                            <i class="fas fa-headset text-dark fs-4 me-3"></i>
+                            <span class="h4 mb-0  text-muted">Mon to Fri : 08:30 - 18:00</span>
+                          </div>
+                          <h4 class="mt-2"><a href="tel:+23-345-67890" class="text-decoration-none text-dark fw-bold hoverIconFooter">+23-456-6588</a></h4>
+                      </div>
+                    </div>
+
+                </div>
+              </div>
+
+
+
+
+
+
+
+              <hr class="hrFooter">
+            
+                    <div class="row mt-3">
+
+                      <div class="col-md-8 mt-4">
+                          <p class="">©2024 Restaurant. All Rights Reserved.</p>
+                      </div>
+
+                          <div class="col-md-4 frameFooter  ">
+                            <div class="content text-center">
+                                <span class="fs-4 fw-bold">Restaurant website</span> <br> I hope you all like our food
+                            </div>
+                          </div>
+
+                    </div>
+                </div>
+              
+
+
+
+
+          </div>
+          </div>
+
+
+        </footer>
+        
+        <script src="js/jquery-3.6.0.js"></script>
+        <script src="js/bootstrap.bundle.min.js"></script>
+        <script src="js/main.js"></script>
+    </body>
+</html>
